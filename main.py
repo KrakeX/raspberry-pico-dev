@@ -18,8 +18,8 @@ while True:
     screen.showText(f'Temp: {getAverageFromList(listOfTemperatures)}C')
 
     if (getAverageFromList(listOfTemperatures) >= 29):
-        activityLed.ledOn()
+        activityLed.working()
     else:
-        activityLed.ledOff()
+        activityLed.off()
 
     utime.sleep(0.1)
